@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Rich Relevance Test</title>
+  <link rel="stylesheet" href="css/globalStyles.css">
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+
+
+    <div class="logo">  
+      <img src="http://www.richrelevance.com/wp-content/themes/rr/img/logo_new.png" width="320" height="42" alt="Front End test" />
+    </div>
+
+
+<div id="drop"></div>
+<div id="loc"> </div>
+
+<!--template#1-->
+<script type="text/template" id="aboutApp">
+<select id="format-select" name="various">
+    <option value="">--select a choice--</option>
+
+    <% _(attrib).each(function(pl) { %>
+            <option value="<%= pl %>"><%= pl %></option>
+    <% }); %>
+</select>
+      </script>
+<!--template#2-->
+<script type="text/template" id="lineChart">
+<div id="lc" style="width:900px; height:600px;"></div>
+</script>
+
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/underscore.js"></script>
+  <script src="js/libs/backbone.js"></script>
+  <script src="js/models/chartModel.js"></script>
+  <script src="js/views/chartView.js"></script>
+  <script src="js/views/dropDownView.js"></script>
+  <script src="js/collections/chartCollection.js"></script>
+  <script src="js/routes/router.js"></script>
+  <script src="js/chartApp.js"></script>
+
+</body>
+</html>
